@@ -1,4 +1,4 @@
-../output/main.o: ..\User\main.c ..\User\led\led.h \
+../output/main.o: ..\User\main.c ..\User\ti_msp_dl_config.h \
   ..\Source\ti\devices\msp\msp.h ..\Source\ti\devices\DeviceFamily.h \
   ..\Source\ti\devices\msp\m0p\mspm0g350x.h \
   E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\stdint.h \
@@ -37,15 +37,14 @@
   ..\Source\ti\devices\msp\peripherals\m0p\hw_sysctl.h \
   ..\Source\ti\devices\msp\peripherals\m0p\sysctl\hw_sysctl_mspm0g1x0x_g3x0x.h \
   ..\Source\ti\driverlib\driverlib.h ..\Source\ti\driverlib\dl_adc12.h \
-  E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\math.h \
-  ..\Source\ti\driverlib\dl_common.h \
-  ..\Source\ti\driverlib\m0p\dl_factoryregion.h \
-  ..\Source\ti\driverlib\m0p\dl_core.h ..\Source\ti\driverlib\dl_aes.h \
+  ..\Source\ti\driverlib\dl_common.h ..\Source\ti\driverlib\dl_aes.h \
   E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Source\ti\driverlib\dl_aesadv.h ..\Source\ti\driverlib\dl_comp.h \
   ..\Source\ti\driverlib\dl_crc.h ..\Source\ti\driverlib\dl_crcp.h \
   ..\Source\ti\driverlib\dl_dac12.h ..\Source\ti\driverlib\dl_dma.h \
   ..\Source\ti\driverlib\dl_flashctl.h \
+  ..\Source\ti\driverlib\m0p\dl_factoryregion.h \
+  ..\Source\ti\driverlib\m0p\dl_core.h \
   ..\Source\ti\driverlib\m0p\dl_sysctl.h \
   ..\Source\ti\driverlib\m0p\sysctl\dl_sysctl_mspm0g1x0x_g3x0x.h \
   ..\Source\ti\driverlib\dl_gpamp.h ..\Source\ti\driverlib\dl_gpio.h \
@@ -55,7 +54,7 @@
   ..\Source\ti\driverlib\dl_lcd.h ..\Source\ti\driverlib\dl_mathacl.h \
   ..\Source\ti\driverlib\dl_mcan.h ..\Source\ti\driverlib\dl_opa.h \
   ..\Source\ti\driverlib\dl_rtc.h ..\Source\ti\driverlib\dl_rtc_common.h \
-  ..\Source\ti\driverlib\dl_rtc_a.h ..\Source\ti\driverlib\dl_rtc_b.h \
+  ..\Source\ti\driverlib\dl_rtc_a.h \
   ..\Source\ti\driverlib\dl_scratchpad.h ..\Source\ti\driverlib\dl_spi.h \
   ..\Source\ti\driverlib\dl_tamperio.h \
   ..\Source\ti\driverlib\dl_timera.h ..\Source\ti\driverlib\dl_timer.h \
@@ -64,4 +63,4 @@
   ..\Source\ti\driverlib\dl_uart.h ..\Source\ti\driverlib\dl_uart_main.h \
   ..\Source\ti\driverlib\dl_vref.h ..\Source\ti\driverlib\dl_wwdt.h \
   ..\Source\ti\driverlib\m0p\dl_interrupt.h \
-  ..\Source\ti\driverlib\m0p\dl_systick.h
+  ..\Source\ti\driverlib\m0p\dl_systick.h ..\User\LED\LED.h

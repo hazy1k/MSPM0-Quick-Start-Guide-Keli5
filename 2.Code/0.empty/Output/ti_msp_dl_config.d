@@ -1,4 +1,4 @@
-../output/led.o: ..\User\LED\LED.c ..\User\LED\LED.h \
+../output/ti_msp_dl_config.o: ..\User\ti_msp_dl_config.c \
   ..\User\ti_msp_dl_config.h ..\Source\ti\devices\msp\msp.h \
   ..\Source\ti\devices\DeviceFamily.h \
   ..\Source\ti\devices\msp\m0p\mspm0g350x.h \

@@ -1,6 +1,5 @@
 ../output/dl_adc12.o: ..\Source\ti\driverlib\dl_adc12.c \
   ..\Source\ti\driverlib\dl_adc12.h \
-  E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\math.h \
   E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
   E:\dianzi\MDKv5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Source\ti\devices\msp\msp.h ..\Source\ti\devices\DeviceFamily.h \
@@ -38,6 +37,4 @@
   ..\Source\ti\devices\msp\peripherals\m0p\hw_debugss.h \
   ..\Source\ti\devices\msp\peripherals\m0p\hw_sysctl.h \
   ..\Source\ti\devices\msp\peripherals\m0p\sysctl\hw_sysctl_mspm0g1x0x_g3x0x.h \
-  ..\Source\ti\driverlib\dl_common.h \
-  ..\Source\ti\driverlib\m0p\dl_factoryregion.h \
-  ..\Source\ti\driverlib\m0p\dl_core.h
+  ..\Source\ti\driverlib\dl_common.h
