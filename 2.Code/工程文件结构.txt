@@ -1,0 +1,13 @@
+- Listing：对应KEIL5魔术棒配置的Listing文件夹，**Listing 文件夹**是用于存放 **Listing 文件**（.lst）的一个目录。Listing 文件是编译过程中的一个中间产物，它包含了编译和汇编过程中所有代码和数据的详细信息，常用于调试和分析程序。
+  
+- Output：对应KEIL5魔术棒配置的Outout文件，输出工程的一些信息文件，当然还有hex
+  
+- Project：存放工程文件，如果使用VScode，此文件夹也存放VScode相关文件
+  
+- Source：TI官方库文件
+  
+- User：用户自己编写的函数，实现特定的功能
+  
+- README.md：程序的简要说明
+  
+- 删除临时文件.bat：如其名
