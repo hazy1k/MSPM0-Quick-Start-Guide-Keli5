@@ -26,7 +26,6 @@
 "..\output\startup_mspm0g350x_uvision.o"
 "..\output\main.o"
 "..\output\ti_msp_dl_config.o"
-"..\output\led.o"
 --strict --scatter ".\mspm0g3507.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

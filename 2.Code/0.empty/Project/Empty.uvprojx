@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>__MSPM0G3507__</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Source\third_party\CMSIS\Core\Include;..\Source;..\User;..\Project;..\User\LED</IncludePath>
+              <IncludePath>..\Source\third_party\CMSIS\Core\Include;..\Source;..\User;..\Project</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -538,11 +538,6 @@
               <FileName>ti_msp_dl_config.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\ti_msp_dl_config.h</FilePath>
-            </File>
-            <File>
-              <FileName>LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\LED\LED.c</FilePath>
             </File>
           </Files>
         </Group>
