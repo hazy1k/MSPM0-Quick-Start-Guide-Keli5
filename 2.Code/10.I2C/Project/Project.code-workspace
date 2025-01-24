@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "sht20.h": "c",
+            "ti_msp_dl_config.h": "c"
+        }
+    },
+    "extensions": {}
+}
