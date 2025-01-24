@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "ti_msp_dl_config.h": "c",
+            "driverlib.h": "c",
+            "msp.h": "c",
+            "dl_core.h": "c",
+            "w25q32.h": "c",
+            "systick.h": "c"
+        }
+    },
+    "extensions": {}
+}
