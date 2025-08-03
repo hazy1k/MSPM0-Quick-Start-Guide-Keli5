@@ -1,0 +1,42 @@
+#include "ADC.h"
+
+/* ADC_VOLTAGE Initialization */
+static const DL_ADC12_ClockConfig gADC_VOLTAGEClockConfig = {
+    .clockSel       = DL_ADC12_CLOCK_SYSOSC,
+    .divideRatio    = DL_ADC12_CLOCK_DIVIDE_8,
+    .freqRange      = DL_ADC12_CLOCK_FREQ_RANGE_24_TO_32,
+};
+void ADC_VOLTAGE_init(void)
+{
+    DL_ADC12_setClockConfig(ADC_VOLTAGE_INST, (DL_ADC12_ClockConfig *) &gADC_VOLTAGEClockConfig);
+    DL_ADC12_initSingleSample(ADC_VOLTAGE_INST,
+        DL_ADC12_REPEAT_MODE_ENABLED, DL_ADC12_SAMPLING_SOURCE_AUTO, DL_ADC12_TRIG_SRC_SOFTWARE,
+        DL_ADC12_SAMP_CONV_RES_12_BIT, DL_ADC12_SAMP_CONV_DATA_FORMAT_UNSIGNED);
+    DL_ADC12_configConversionMem(ADC_VOLTAGE_INST, ADC_VOLTAGE_ADCMEM_ADC_CH0,
+        DL_ADC12_INPUT_CHAN_0, DL_ADC12_REFERENCE_VOLTAGE_VDDA, DL_ADC12_SAMPLE_TIMER_SOURCE_SCOMP0, DL_ADC12_AVERAGING_MODE_DISABLED,
+        DL_ADC12_BURN_OUT_SOURCE_DISABLED, DL_ADC12_TRIGGER_MODE_AUTO_NEXT, DL_ADC12_WINDOWS_COMP_MODE_DISABLED);
+    DL_ADC12_setSampleTime0(ADC_VOLTAGE_INST,40000);
+    DL_ADC12_enableDMA(ADC_VOLTAGE_INST);
+    DL_ADC12_setDMASamplesCnt(ADC_VOLTAGE_INST,1);
+    DL_ADC12_enableDMATrigger(ADC_VOLTAGE_INST,(DL_ADC12_DMA_MEM0_RESULT_LOADED));
+    DL_ADC12_enableConversions(ADC_VOLTAGE_INST);
+}
+
+/* DMA_CH0 Initialization */
+static const DL_DMA_Config gDMA_CH0Config = {
+    .transferMode   = DL_DMA_FULL_CH_REPEAT_SINGLE_TRANSFER_MODE,
+    .extendedMode   = DL_DMA_NORMAL_MODE,
+    .destIncrement  = DL_DMA_ADDR_INCREMENT,
+    .srcIncrement   = DL_DMA_ADDR_UNCHANGED,
+    .destWidth      = DL_DMA_WIDTH_HALF_WORD,
+    .srcWidth       = DL_DMA_WIDTH_HALF_WORD,
+    .trigger        = ADC_DMAx,
+    .triggerType    = DL_DMA_TRIGGER_TYPE_EXTERNAL,
+};
+
+void DMA_CH0_init(void)
+{
+    DL_DMA_setTransferSize(DMA, DMA_CHAN_ID, 10); 
+    DL_DMA_initChannel(DMA, DMA_CHAN_ID , (DL_DMA_Config *) &gDMA_CH0Config);
+}
+

@@ -1,0 +1,293 @@
+{
+  "name": "empty",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Source",
+        "files": [
+          {
+            "path": "../Source/ti/driverlib/dl_adc12.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_aes.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_aesadv.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_common.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_crc.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_crcp.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_dac12.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_dma.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_flashctl.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_i2c.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_keystorectl.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_lcd.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_lfss.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_mathacl.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_mcan.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_opa.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_rtc_common.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_spi.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_timer.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_trng.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_uart.c"
+          },
+          {
+            "path": "../Source/ti/driverlib/dl_vref.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Start",
+        "files": [
+          {
+            "path": "startup_mspm0l130x_uvision.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "../User/LED/LED.c"
+          },
+          {
+            "path": "../User/main.c"
+          },
+          {
+            "path": "../User/ti_msp_dl_config.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "1a4d872aeb5bfc62d8cda82c164a3e0b"
+  },
+  "targets": {
+    "empty": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M0+",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "mspm0l1306.sct",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x1000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Source",
+          "../Source/third_party/CMSIS/Core/Include",
+          ".",
+          "../User",
+          "../User/LED",
+          ".cmsis/include",
+          "RTE/_empty"
+        ],
+        "libList": [],
+        "defineList": [
+          "__MSPM0L1306__"
+        ]
+      },
+      "builderOptions": {
+        "AC6": {
+          "version": 3,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": false,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-2",
+            "language-c": "c99",
+            "language-cpp": "c++11",
+            "link-time-optimization": false,
+            "one-elf-section-per-function": true,
+            "short-enums#wchar": true,
+            "warnings": "misra-compatible"
+          },
+          "asm-compiler": {
+            "$use": "asm-auto"
+          },
+          "linker": {
+            "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "xo-base": "",
+            "ro-base": "0x00000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}

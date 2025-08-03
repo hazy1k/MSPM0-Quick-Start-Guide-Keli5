@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.m": "matlab",
+            "sht20.h": "c",
+            "stdio.h": "c"
+        }
+    },
+    "extensions": {}
+}
