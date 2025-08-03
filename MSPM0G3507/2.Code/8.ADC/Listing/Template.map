@@ -1,0 +1,1859 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    dl_adc12.o(.ARM.exidx.text.DL_ADC12_setClockConfig) refers to dl_adc12.o(.text.DL_ADC12_setClockConfig) for [Anonymous Symbol]
+    dl_adc12.o(.ARM.exidx.text.DL_ADC12_getClockConfig) refers to dl_adc12.o(.text.DL_ADC12_getClockConfig) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_setKey) refers to dl_aes.o(.text.DL_AES_setKey) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_setKeyAligned) refers to dl_aes.o(.text.DL_AES_setKeyAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadDataIn) refers to dl_aes.o(.text.DL_AES_loadDataIn) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadDataInAligned) refers to dl_aes.o(.text.DL_AES_loadDataInAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_getDataOut) refers to dl_aes.o(.text.DL_AES_getDataOut) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_getDataOutAligned) refers to dl_aes.o(.text.DL_AES_getDataOutAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataIn) refers to dl_aes.o(.text.DL_AES_loadXORDataIn) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInAligned) refers to dl_aes.o(.text.DL_AES_loadXORDataInAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInWithoutTrigger) refers to dl_aes.o(.text.DL_AES_loadXORDataInWithoutTrigger) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInWithoutTriggerAligned) refers to dl_aes.o(.text.DL_AES_loadXORDataInWithoutTriggerAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_xorData) refers to dl_aes.o(.text.DL_AES_xorData) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_xorDataAligned) refers to dl_aes.o(.text.DL_AES_xorDataAligned) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_saveConfiguration) refers to dl_aes.o(.text.DL_AES_saveConfiguration) for [Anonymous Symbol]
+    dl_aes.o(.ARM.exidx.text.DL_AES_restoreConfiguration) refers to dl_aes.o(.text.DL_AES_restoreConfiguration) for [Anonymous Symbol]
+    dl_common.o(.ARM.exidx.text.DL_Common_delayCycles) refers to dl_common.o(.text.DL_Common_delayCycles) for [Anonymous Symbol]
+    dl_crc.o(.ARM.exidx.text.DL_CRC_calculateBlock32) refers to dl_crc.o(.text.DL_CRC_calculateBlock32) for [Anonymous Symbol]
+    dl_crc.o(.ARM.exidx.text.DL_CRC_calculateMemoryRange32) refers to dl_crc.o(.text.DL_CRC_calculateMemoryRange32) for [Anonymous Symbol]
+    dl_crc.o(.ARM.exidx.text.DL_CRC_calculateBlock16) refers to dl_crc.o(.text.DL_CRC_calculateBlock16) for [Anonymous Symbol]
+    dl_crc.o(.ARM.exidx.text.DL_CRC_calculateMemoryRange16) refers to dl_crc.o(.text.DL_CRC_calculateMemoryRange16) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_init) refers to dl_dac12.o(.text.DL_DAC12_init) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_outputBlocking8) refers to dl_dac12.o(.text.DL_DAC12_outputBlocking8) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_outputBlocking12) refers to dl_dac12.o(.text.DL_DAC12_outputBlocking12) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_fillFIFO8) refers to dl_dac12.o(.text.DL_DAC12_fillFIFO8) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_fillFIFO12) refers to dl_dac12.o(.text.DL_DAC12_fillFIFO12) for [Anonymous Symbol]
+    dl_dac12.o(.ARM.exidx.text.DL_DAC12_performSelfCalibrationBlocking) refers to dl_dac12.o(.text.DL_DAC12_performSelfCalibrationBlocking) for [Anonymous Symbol]
+    dl_dma.o(.ARM.exidx.text.DL_DMA_initChannel) refers to dl_dma.o(.text.DL_DMA_initChannel) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_eraseMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_eraseMemoryFromRAM) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseMemoryFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_eraseMemoryFromRAM) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.ramfunc) refers to dl_flashctl.o(.ramfunc) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_massErase) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massErase) refers to dl_flashctl.o(.text.DL_FlashCTL_massErase) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectMainMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectMainMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectNonMainMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_protectNonMainMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_eraseDataBank) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseDataBank) refers to dl_flashctl.o(.text.DL_FlashCTL_eraseDataBank) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_massEraseFromRAM) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.text.DL_FlashCTL_massEraseFromRAM) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massEraseFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_massEraseFromRAM) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_eraseDataBankFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseDataBankFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_eraseDataBankFromRAM) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_massEraseMultiBank) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    dl_flashctl.o(.text.DL_FlashCTL_massEraseMultiBank) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massEraseMultiBank) refers to dl_flashctl.o(.text.DL_FlashCTL_massEraseMultiBank) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_factoryReset) refers to dl_flashctl.o(.text.DL_FlashCTL_massErase) for DL_FlashCTL_massErase
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryReset) refers to dl_flashctl.o(.text.DL_FlashCTL_factoryReset) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectNonMainMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectNonMainMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_factoryResetFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_massEraseFromRAM) for DL_FlashCTL_massEraseFromRAM
+    dl_flashctl.o(.text.DL_FlashCTL_factoryResetFromRAM) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryResetFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_factoryResetFromRAM) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_factoryResetMultiBank) refers to dl_flashctl.o(.text.DL_FlashCTL_massEraseMultiBank) for DL_FlashCTL_massEraseMultiBank
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryResetMultiBank) refers to dl_flashctl.o(.text.DL_FlashCTL_factoryResetMultiBank) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory8) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory16) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory32) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory64) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory8WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory16WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory32WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory8WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory16WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory32WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemory64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectSector) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectSector) for DL_FlashCTL_unprotectSector
+    dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectDataMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectDataMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectMainMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_protectMainMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectAllMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_unprotectAllMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectAllMemory) refers to dl_flashctl.o(.text.DL_FlashCTL_protectAllMemory) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_protectSector) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectSector) refers to dl_flashctl.o(.text.DL_FlashCTL_protectSector) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify8) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify16) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify32) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify64) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCGenerated) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCManual) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify8WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify16WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify32WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64WithECCGenerated) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify64WithECCGenerated) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify8WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify16WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify32WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64WithECCManual) refers to dl_flashctl.o(.text.DL_FlashCTL_readVerify64WithECCManual) for [Anonymous Symbol]
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_blankVerify) refers to dl_flashctl.o(.text.DL_FlashCTL_blankVerify) for [Anonymous Symbol]
+    dl_flashctl.o(.text.DL_FlashCTL_blankVerifyFromRAM) refers to dl_flashctl.o(.ramfunc) for DL_FlashCTL_executeCommandFromRAM
+    dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_blankVerifyFromRAM) refers to dl_flashctl.o(.text.DL_FlashCTL_blankVerifyFromRAM) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_setClockConfig) refers to dl_i2c.o(.text.DL_I2C_setClockConfig) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_getClockConfig) refers to dl_i2c.o(.text.DL_I2C_getClockConfig) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_fillControllerTXFIFO) refers to dl_i2c.o(.text.DL_I2C_fillControllerTXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_flushControllerTXFIFO) refers to dl_i2c.o(.text.DL_I2C_flushControllerTXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_flushControllerRXFIFO) refers to dl_i2c.o(.text.DL_I2C_flushControllerRXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_fillTargetTXFIFO) refers to dl_i2c.o(.text.DL_I2C_fillTargetTXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_flushTargetTXFIFO) refers to dl_i2c.o(.text.DL_I2C_flushTargetTXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_flushTargetRXFIFO) refers to dl_i2c.o(.text.DL_I2C_flushTargetRXFIFO) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_transmitTargetDataBlocking) refers to dl_i2c.o(.text.DL_I2C_transmitTargetDataBlocking) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_transmitTargetDataCheck) refers to dl_i2c.o(.text.DL_I2C_transmitTargetDataCheck) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_receiveTargetDataBlocking) refers to dl_i2c.o(.text.DL_I2C_receiveTargetDataBlocking) for [Anonymous Symbol]
+    dl_i2c.o(.ARM.exidx.text.DL_I2C_receiveTargetDataCheck) refers to dl_i2c.o(.text.DL_I2C_receiveTargetDataCheck) for [Anonymous Symbol]
+    dl_mathacl.o(.ARM.exidx.text.DL_MathACL_configOperation) refers to dl_mathacl.o(.text.DL_MathACL_configOperation) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_isReady) refers to dl_mcan.o(.text.DL_MCAN_isReady) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_setClockConfig) refers to dl_mcan.o(.text.DL_MCAN_setClockConfig) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClockConfig) refers to dl_mcan.o(.text.DL_MCAN_getClockConfig) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_isInReset) refers to dl_mcan.o(.text.DL_MCAN_isInReset) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_isFDOpEnable) refers to dl_mcan.o(.text.DL_MCAN_isFDOpEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_isMemInitDone) refers to dl_mcan.o(.text.DL_MCAN_isMemInitDone) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_setOpMode) refers to dl_mcan.o(.text.DL_MCAN_setOpMode) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getOpMode) refers to dl_mcan.o(.text.DL_MCAN_getOpMode) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_init) refers to dl_mcan.o(.text.DL_MCAN_init) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_config) refers to dl_mcan.o(.text.DL_MCAN_config) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccConfig) refers to dl_mcan.o(.text.DL_MCAN_eccConfig) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_setBitTime) refers to dl_mcan.o(.text.DL_MCAN_setBitTime) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_msgRAMConfig) refers to dl_mcan.o(.text.DL_MCAN_msgRAMConfig) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_setExtIDAndMask) refers to dl_mcan.o(.text.DL_MCAN_setExtIDAndMask) for [Anonymous Symbol]
+    dl_mcan.o(.text.DL_MCAN_writeMsgRam) refers to dl_mcan.o(.rodata.cst32) for [Anonymous Symbol]
+    dl_mcan.o(.text.DL_MCAN_writeMsgRam) refers to dl_mcan.o(.rodata..L__const.DL_MCAN_getDataSize.dataSize) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeMsgRam) refers to dl_mcan.o(.text.DL_MCAN_writeMsgRam) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_TXBufAddReq) refers to dl_mcan.o(.text.DL_MCAN_TXBufAddReq) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getNewDataStatus) refers to dl_mcan.o(.text.DL_MCAN_getNewDataStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_clearNewDataStatus) refers to dl_mcan.o(.text.DL_MCAN_clearNewDataStatus) for [Anonymous Symbol]
+    dl_mcan.o(.text.DL_MCAN_readMsgRam) refers to dl_mcan.o(.rodata.cst32) for [Anonymous Symbol]
+    dl_mcan.o(.text.DL_MCAN_readMsgRam) refers to dl_mcan.o(.rodata..L__const.DL_MCAN_getDataSize.dataSize) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_readMsgRam) refers to dl_mcan.o(.text.DL_MCAN_readMsgRam) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_readTxEventFIFO) refers to dl_mcan.o(.text.DL_MCAN_readTxEventFIFO) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_addStdMsgIDFilter) refers to dl_mcan.o(.text.DL_MCAN_addStdMsgIDFilter) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_addExtMsgIDFilter) refers to dl_mcan.o(.text.DL_MCAN_addExtMsgIDFilter) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_lpbkModeEnable) refers to dl_mcan.o(.text.DL_MCAN_lpbkModeEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getErrCounters) refers to dl_mcan.o(.text.DL_MCAN_getErrCounters) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getProtocolStatus) refers to dl_mcan.o(.text.DL_MCAN_getProtocolStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_enableIntr) refers to dl_mcan.o(.text.DL_MCAN_enableIntr) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_selectIntrLine) refers to dl_mcan.o(.text.DL_MCAN_selectIntrLine) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getIntrLineSelectStatus) refers to dl_mcan.o(.text.DL_MCAN_getIntrLineSelectStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_enableIntrLine) refers to dl_mcan.o(.text.DL_MCAN_enableIntrLine) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getIntrStatus) refers to dl_mcan.o(.text.DL_MCAN_getIntrStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_clearIntrStatus) refers to dl_mcan.o(.text.DL_MCAN_clearIntrStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getHighPriorityMsgStatus) refers to dl_mcan.o(.text.DL_MCAN_getHighPriorityMsgStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRxFIFOStatus) refers to dl_mcan.o(.text.DL_MCAN_getRxFIFOStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeRxFIFOAck) refers to dl_mcan.o(.text.DL_MCAN_writeRxFIFOAck) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxFIFOQueStatus) refers to dl_mcan.o(.text.DL_MCAN_getTxFIFOQueStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufReqPend) refers to dl_mcan.o(.text.DL_MCAN_getTxBufReqPend) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_txBufCancellationReq) refers to dl_mcan.o(.text.DL_MCAN_txBufCancellationReq) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufTransmissionStatus) refers to dl_mcan.o(.text.DL_MCAN_getTxBufTransmissionStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_txBufCancellationStatus) refers to dl_mcan.o(.text.DL_MCAN_txBufCancellationStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_TXBufTransIntrEnable) refers to dl_mcan.o(.text.DL_MCAN_TXBufTransIntrEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufCancellationIntrEnable) refers to dl_mcan.o(.text.DL_MCAN_getTxBufCancellationIntrEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxEventFIFOStatus) refers to dl_mcan.o(.text.DL_MCAN_getTxEventFIFOStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_addClockStopRequest) refers to dl_mcan.o(.text.DL_MCAN_addClockStopRequest) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeTxEventFIFOAck) refers to dl_mcan.o(.text.DL_MCAN_writeTxEventFIFOAck) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccForceError) refers to dl_mcan.o(.text.DL_MCAN_eccForceError) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccGetErrorStatus) refers to dl_mcan.o(.text.DL_MCAN_eccGetErrorStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccClearErrorStatus) refers to dl_mcan.o(.text.DL_MCAN_eccClearErrorStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccWriteEOI) refers to dl_mcan.o(.text.DL_MCAN_eccWriteEOI) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccEnableIntr) refers to dl_mcan.o(.text.DL_MCAN_eccEnableIntr) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccGetIntrStatus) refers to dl_mcan.o(.text.DL_MCAN_eccGetIntrStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccClearIntrStatus) refers to dl_mcan.o(.text.DL_MCAN_eccClearIntrStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSCounterConfig) refers to dl_mcan.o(.text.DL_MCAN_extTSCounterConfig) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSCounterEnable) refers to dl_mcan.o(.text.DL_MCAN_extTSCounterEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSEnableIntr) refers to dl_mcan.o(.text.DL_MCAN_extTSEnableIntr) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSWriteEOI) refers to dl_mcan.o(.text.DL_MCAN_extTSWriteEOI) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSGetUnservicedIntrCount) refers to dl_mcan.o(.text.DL_MCAN_extTSGetUnservicedIntrCount) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRevisionId) refers to dl_mcan.o(.text.DL_MCAN_getRevisionId) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClockStopAck) refers to dl_mcan.o(.text.DL_MCAN_getClockStopAck) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSSetRawStatus) refers to dl_mcan.o(.text.DL_MCAN_extTSSetRawStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSClearRawStatus) refers to dl_mcan.o(.text.DL_MCAN_extTSClearRawStatus) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRxPinState) refers to dl_mcan.o(.text.DL_MCAN_getRxPinState) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_setTxPinState) refers to dl_mcan.o(.text.DL_MCAN_setTxPinState) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxPinState) refers to dl_mcan.o(.text.DL_MCAN_getTxPinState) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTSCounterVal) refers to dl_mcan.o(.text.DL_MCAN_getTSCounterVal) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClkStopAck) refers to dl_mcan.o(.text.DL_MCAN_getClkStopAck) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getBitTime) refers to dl_mcan.o(.text.DL_MCAN_getBitTime) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_resetTSCounter) refers to dl_mcan.o(.text.DL_MCAN_resetTSCounter) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTOCounterVal) refers to dl_mcan.o(.text.DL_MCAN_getTOCounterVal) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccAggrGetRevisionId) refers to dl_mcan.o(.text.DL_MCAN_eccAggrGetRevisionId) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccWrapGetRevisionId) refers to dl_mcan.o(.text.DL_MCAN_eccWrapGetRevisionId) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSIsIntrEnable) refers to dl_mcan.o(.text.DL_MCAN_extTSIsIntrEnable) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getEndianVal) refers to dl_mcan.o(.text.DL_MCAN_getEndianVal) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_getExtIDANDMask) refers to dl_mcan.o(.text.DL_MCAN_getExtIDANDMask) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_saveConfiguration) refers to dl_mcan.o(.text.DL_MCAN_saveConfiguration) for [Anonymous Symbol]
+    dl_mcan.o(.ARM.exidx.text.DL_MCAN_restoreConfiguration) refers to dl_mcan.o(.text.DL_MCAN_restoreConfiguration) for [Anonymous Symbol]
+    dl_opa.o(.ARM.exidx.text.DL_OPA_increaseGain) refers to dl_opa.o(.text.DL_OPA_increaseGain) for [Anonymous Symbol]
+    dl_opa.o(.ARM.exidx.text.DL_OPA_decreaseGain) refers to dl_opa.o(.text.DL_OPA_decreaseGain) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_initCalendar) refers to dl_rtc_common.o(.text.DL_RTC_Common_initCalendar) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarTime) refers to dl_rtc_common.o(.text.DL_RTC_Common_getCalendarTime) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_setCalendarAlarm1) refers to dl_rtc_common.o(.text.DL_RTC_Common_setCalendarAlarm1) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarAlarm1) refers to dl_rtc_common.o(.text.DL_RTC_Common_getCalendarAlarm1) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_enableCalendarAlarm1) refers to dl_rtc_common.o(.text.DL_RTC_Common_enableCalendarAlarm1) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_disableCalendarAlarm1) refers to dl_rtc_common.o(.text.DL_RTC_Common_disableCalendarAlarm1) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_setCalendarAlarm2) refers to dl_rtc_common.o(.text.DL_RTC_Common_setCalendarAlarm2) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarAlarm2) refers to dl_rtc_common.o(.text.DL_RTC_Common_getCalendarAlarm2) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_enableCalendarAlarm2) refers to dl_rtc_common.o(.text.DL_RTC_Common_enableCalendarAlarm2) for [Anonymous Symbol]
+    dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_disableCalendarAlarm2) refers to dl_rtc_common.o(.text.DL_RTC_Common_disableCalendarAlarm2) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_init) refers to dl_spi.o(.text.DL_SPI_init) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_setClockConfig) refers to dl_spi.o(.text.DL_SPI_setClockConfig) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_getClockConfig) refers to dl_spi.o(.text.DL_SPI_getClockConfig) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking8) refers to dl_spi.o(.text.DL_SPI_receiveDataBlocking8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking16) refers to dl_spi.o(.text.DL_SPI_receiveDataBlocking16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking32) refers to dl_spi.o(.text.DL_SPI_receiveDataBlocking32) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking8) refers to dl_spi.o(.text.DL_SPI_transmitDataBlocking8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking16) refers to dl_spi.o(.text.DL_SPI_transmitDataBlocking16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking32) refers to dl_spi.o(.text.DL_SPI_transmitDataBlocking32) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck8) refers to dl_spi.o(.text.DL_SPI_receiveDataCheck8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck16) refers to dl_spi.o(.text.DL_SPI_receiveDataCheck16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck32) refers to dl_spi.o(.text.DL_SPI_receiveDataCheck32) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck8) refers to dl_spi.o(.text.DL_SPI_transmitDataCheck8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck16) refers to dl_spi.o(.text.DL_SPI_transmitDataCheck16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck32) refers to dl_spi.o(.text.DL_SPI_transmitDataCheck32) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO8) refers to dl_spi.o(.text.DL_SPI_drainRXFIFO8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO16) refers to dl_spi.o(.text.DL_SPI_drainRXFIFO16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO32) refers to dl_spi.o(.text.DL_SPI_drainRXFIFO32) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO8) refers to dl_spi.o(.text.DL_SPI_fillTXFIFO8) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO16) refers to dl_spi.o(.text.DL_SPI_fillTXFIFO16) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_saveConfiguration) refers to dl_spi.o(.text.DL_SPI_saveConfiguration) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_restoreConfiguration) refers to dl_spi.o(.text.DL_SPI_restoreConfiguration) for [Anonymous Symbol]
+    dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO32) refers to dl_spi.o(.text.DL_SPI_fillTXFIFO32) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setClockConfig) refers to dl_timer.o(.text.DL_Timer_setClockConfig) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getClockConfig) refers to dl_timer.o(.text.DL_Timer_getClockConfig) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initTimerMode) refers to dl_timer.o(.text.DL_Timer_initTimerMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareValue) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareValue) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareCtl) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareCtl) for [Anonymous Symbol]
+    dl_timer.o(.text.DL_Timer_initCaptureMode) refers to dl_timer.o(.rodata..Lswitch.table.DL_Timer_initCompareMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureMode) refers to dl_timer.o(.text.DL_Timer_initCaptureMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareInput) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareInput) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureTriggerMode) refers to dl_timer.o(.text.DL_Timer_initCaptureTriggerMode) for [Anonymous Symbol]
+    dl_timer.o(.text.DL_Timer_initCaptureCombinedMode) refers to dl_timer.o(.rodata..Lswitch.table.DL_Timer_initCompareMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureCombinedMode) refers to dl_timer.o(.text.DL_Timer_initCaptureCombinedMode) for [Anonymous Symbol]
+    dl_timer.o(.text.DL_Timer_initCompareMode) refers to dl_timer.o(.rodata..Lswitch.table.DL_Timer_initCompareMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initCompareMode) refers to dl_timer.o(.text.DL_Timer_initCompareMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initCompareTriggerMode) refers to dl_timer.o(.text.DL_Timer_initCompareTriggerMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_initPWMMode) refers to dl_timer.o(.text.DL_Timer_initPWMMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareAction) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareAction) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareOutCtl) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareOutCtl) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareValue) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareValue) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareCtl) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareCtl) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompSrcDn) refers to dl_timer.o(.text.DL_Timer_setSecondCompSrcDn) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompSrcDn) refers to dl_timer.o(.text.DL_Timer_getSecondCompSrcDn) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompSrcUp) refers to dl_timer.o(.text.DL_Timer_setSecondCompSrcUp) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompSrcUp) refers to dl_timer.o(.text.DL_Timer_getSecondCompSrcUp) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompActionDn) refers to dl_timer.o(.text.DL_Timer_setSecondCompActionDn) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompActionDn) refers to dl_timer.o(.text.DL_Timer_getSecondCompActionDn) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompActionUp) refers to dl_timer.o(.text.DL_Timer_setSecondCompActionUp) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompActionUp) refers to dl_timer.o(.text.DL_Timer_getSecondCompActionUp) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_enableSuppressionOfCompEvent) refers to dl_timer.o(.text.DL_Timer_enableSuppressionOfCompEvent) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_disableSuppressionOfCompEvent) refers to dl_timer.o(.text.DL_Timer_disableSuppressionOfCompEvent) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptCompUpdateMethod) refers to dl_timer.o(.text.DL_Timer_setCaptCompUpdateMethod) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptCompUpdateMethod) refers to dl_timer.o(.text.DL_Timer_getCaptCompUpdateMethod) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareOutCtl) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareOutCtl) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareAction) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareAction) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_overrideCCPOut) refers to dl_timer.o(.text.DL_Timer_overrideCCPOut) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareInput) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareInput) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareInputFilter) refers to dl_timer.o(.text.DL_Timer_setCaptureCompareInputFilter) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareInputFilter) refers to dl_timer.o(.text.DL_Timer_getCaptureCompareInputFilter) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_enableCaptureCompareInputFilter) refers to dl_timer.o(.text.DL_Timer_enableCaptureCompareInputFilter) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_disableCaptureCompareInputFilter) refers to dl_timer.o(.text.DL_Timer_disableCaptureCompareInputFilter) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_isCaptureCompareInputFilterEnabled) refers to dl_timer.o(.text.DL_Timer_isCaptureCompareInputFilterEnabled) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_saveConfiguration) refers to dl_timer.o(.text.DL_Timer_saveConfiguration) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_restoreConfiguration) refers to dl_timer.o(.text.DL_Timer_restoreConfiguration) for [Anonymous Symbol]
+    dl_timer.o(.text.DL_TimerA_initPWMMode) refers to dl_timer.o(.text.DL_Timer_initPWMMode) for DL_Timer_initPWMMode
+    dl_timer.o(.ARM.exidx.text.DL_TimerA_initPWMMode) refers to dl_timer.o(.text.DL_TimerA_initPWMMode) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_setFaultSourceConfig) refers to dl_timer.o(.text.DL_Timer_setFaultSourceConfig) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_getFaultSourceConfig) refers to dl_timer.o(.text.DL_Timer_getFaultSourceConfig) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_TimerA_saveConfiguration) refers to dl_timer.o(.text.DL_TimerA_saveConfiguration) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_TimerA_restoreConfiguration) refers to dl_timer.o(.text.DL_TimerA_restoreConfiguration) for [Anonymous Symbol]
+    dl_timer.o(.ARM.exidx.text.DL_Timer_configQEIHallInputMode) refers to dl_timer.o(.text.DL_Timer_configQEIHallInputMode) for [Anonymous Symbol]
+    dl_trng.o(.ARM.exidx.text.DL_TRNG_saveConfiguration) refers to dl_trng.o(.text.DL_TRNG_saveConfiguration) for [Anonymous Symbol]
+    dl_trng.o(.ARM.exidx.text.DL_TRNG_restoreConfiguration) refers to dl_trng.o(.text.DL_TRNG_restoreConfiguration) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_init) refers to dl_uart.o(.text.DL_UART_init) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_setClockConfig) refers to dl_uart.o(.text.DL_UART_setClockConfig) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_getClockConfig) refers to dl_uart.o(.text.DL_UART_getClockConfig) for [Anonymous Symbol]
+    dl_uart.o(.text.DL_UART_configBaudRate) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    dl_uart.o(.ARM.exidx.text.DL_UART_configBaudRate) refers to dl_uart.o(.text.DL_UART_configBaudRate) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_configIrDAMode) refers to dl_uart.o(.text.DL_UART_configIrDAMode) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_setIrDAPulseLength) refers to dl_uart.o(.text.DL_UART_setIrDAPulseLength) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_receiveDataBlocking) refers to dl_uart.o(.text.DL_UART_receiveDataBlocking) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_transmitDataBlocking) refers to dl_uart.o(.text.DL_UART_transmitDataBlocking) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_receiveDataCheck) refers to dl_uart.o(.text.DL_UART_receiveDataCheck) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_transmitDataCheck) refers to dl_uart.o(.text.DL_UART_transmitDataCheck) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_drainRXFIFO) refers to dl_uart.o(.text.DL_UART_drainRXFIFO) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_fillTXFIFO) refers to dl_uart.o(.text.DL_UART_fillTXFIFO) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_Main_saveConfiguration) refers to dl_uart.o(.text.DL_UART_Main_saveConfiguration) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_Main_restoreConfiguration) refers to dl_uart.o(.text.DL_UART_Main_restoreConfiguration) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_Extend_saveConfiguration) refers to dl_uart.o(.text.DL_UART_Extend_saveConfiguration) for [Anonymous Symbol]
+    dl_uart.o(.ARM.exidx.text.DL_UART_Extend_restoreConfiguration) refers to dl_uart.o(.text.DL_UART_Extend_restoreConfiguration) for [Anonymous Symbol]
+    dl_vref.o(.ARM.exidx.text.DL_VREF_configReference) refers to dl_vref.o(.text.DL_VREF_configReference) for [Anonymous Symbol]
+    dl_vref.o(.ARM.exidx.text.DL_VREF_setClockConfig) refers to dl_vref.o(.text.DL_VREF_setClockConfig) for [Anonymous Symbol]
+    dl_vref.o(.ARM.exidx.text.DL_VREF_getClockConfig) refers to dl_vref.o(.text.DL_VREF_getClockConfig) for [Anonymous Symbol]
+    dl_interrupt.o(.text.DL_Interrupt_registerInterrupt) refers to dl_interrupt.o(.vtable) for [Anonymous Symbol]
+    dl_interrupt.o(.ARM.exidx.text.DL_Interrupt_registerInterrupt) refers to dl_interrupt.o(.text.DL_Interrupt_registerInterrupt) for [Anonymous Symbol]
+    dl_interrupt.o(.text.DL_Interrupt_unregisterInterrupt) refers to dl_interrupt.o(.vtable) for [Anonymous Symbol]
+    dl_interrupt.o(.text.DL_Interrupt_unregisterInterrupt) refers to startup_mspm0g350x_uvision.o(.text) for Default_Handler
+    dl_interrupt.o(.ARM.exidx.text.DL_Interrupt_unregisterInterrupt) refers to dl_interrupt.o(.text.DL_Interrupt_unregisterInterrupt) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_configSYSPLL) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_configSYSPLL) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setLFCLKSourceLFXT) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setLFCLKSourceLFXT) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromSYSOSCtoLFCLK) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromSYSOSCtoLFCLK) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromLFCLKtoSYSOSC) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromLFCLKtoSYSOSC) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromSYSOSCtoHSCLK) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromSYSOSCtoHSCLK) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromHSCLKtoSYSOSC) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromHSCLKtoSYSOSC) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setHFCLKSourceHFXT) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setHFCLKSourceHFXT) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setHFCLKSourceHFXTParams) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setHFCLKSourceHFXTParams) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_configFCC) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_configFCC) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicyRUNSLEEP) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicyRUNSLEEP) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicySTOP) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicySTOP) for [Anonymous Symbol]
+    dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicySTANDBY) refers to dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicySTANDBY) for [Anonymous Symbol]
+    startup_mspm0g350x_uvision.o(RESET) refers to startup_mspm0g350x_uvision.o(STACK) for __initial_sp
+    startup_mspm0g350x_uvision.o(RESET) refers to startup_mspm0g350x_uvision.o(.text) for Reset_Handler
+    startup_mspm0g350x_uvision.o(RESET) refers to systick.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_mspm0g350x_uvision.o(RESET) refers to adc.o(.text.ADC0_IRQHandler) for ADC0_IRQHandler
+    startup_mspm0g350x_uvision.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    main.o(.text.main) refers to ti_msp_dl_config.o(.text.SYSCFG_DL_init) for SYSCFG_DL_init
+    main.o(.text.main) refers to adc.o(.text.ADC_Init) for ADC_Init
+    main.o(.text.main) refers to uart.o(.text.UART_0_init) for UART_0_init
+    main.o(.text.main) refers to systick.o(.text.SysTick_Init) for SysTick_Init
+    main.o(.text.main) refers to adc.o(.text.ADC_getValue) for ADC_getValue
+    main.o(.text.main) refers to printf1.o(i.__0printf$1) for __2printf
+    main.o(.text.main) refers to systick.o(.text.delay_ms) for delay_ms
+    main.o(.text.main) refers to dflti.o(.text) for __aeabi_i2d
+    main.o(.text.main) refers to ddiv.o(.text) for __aeabi_ddiv
+    main.o(.text.main) refers to dmul.o(.text) for __aeabi_dmul
+    main.o(.text.main) refers to dfixi.o(.text) for __aeabi_d2iz
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    ti_msp_dl_config.o(.text.SYSCFG_DL_init) refers to dl_common.o(.text.DL_Common_delayCycles) for DL_Common_delayCycles
+    ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_init) refers to ti_msp_dl_config.o(.text.SYSCFG_DL_init) for [Anonymous Symbol]
+    ti_msp_dl_config.o(.text.SYSCFG_DL_initPower) refers to dl_common.o(.text.DL_Common_delayCycles) for DL_Common_delayCycles
+    ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_initPower) refers to ti_msp_dl_config.o(.text.SYSCFG_DL_initPower) for [Anonymous Symbol]
+    ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_SYSCTL_init) refers to ti_msp_dl_config.o(.text.SYSCFG_DL_SYSCTL_init) for [Anonymous Symbol]
+    led.o(.ARM.exidx.text.LED_Init) refers to led.o(.text.LED_Init) for [Anonymous Symbol]
+    systick.o(.ARM.exidx.text.SysTick_Init) refers to systick.o(.text.SysTick_Init) for [Anonymous Symbol]
+    systick.o(.text.delay_ms) refers to systick.o(.bss.delay_times) for delay_times
+    systick.o(.ARM.exidx.text.delay_ms) refers to systick.o(.text.delay_ms) for [Anonymous Symbol]
+    systick.o(.text.SysTick_Handler) refers to systick.o(.bss.delay_times) for delay_times
+    systick.o(.ARM.exidx.text.SysTick_Handler) refers to systick.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    uart.o(.text.UART_0_init) refers to dl_uart.o(.text.DL_UART_setClockConfig) for DL_UART_setClockConfig
+    uart.o(.text.UART_0_init) refers to dl_uart.o(.text.DL_UART_init) for DL_UART_init
+    uart.o(.text.UART_0_init) refers to uart.o(.rodata.gUART_0ClockConfig) for [Anonymous Symbol]
+    uart.o(.text.UART_0_init) refers to uart.o(.rodata.gUART_0Config) for [Anonymous Symbol]
+    uart.o(.ARM.exidx.text.UART_0_init) refers to uart.o(.text.UART_0_init) for [Anonymous Symbol]
+    uart.o(.ARM.exidx.text.fputc) refers to uart.o(.text.fputc) for [Anonymous Symbol]
+    adc.o(.text.ADC_Init) refers to dl_adc12.o(.text.DL_ADC12_setClockConfig) for DL_ADC12_setClockConfig
+    adc.o(.text.ADC_Init) refers to adc.o(.rodata.gADC_VOLTAGEClockConfig) for [Anonymous Symbol]
+    adc.o(.ARM.exidx.text.ADC_Init) refers to adc.o(.text.ADC_Init) for [Anonymous Symbol]
+    adc.o(.text.ADC_getValue) refers to adc.o(.bss.gCheckADC) for gCheckADC
+    adc.o(.ARM.exidx.text.ADC_getValue) refers to adc.o(.text.ADC_getValue) for [Anonymous Symbol]
+    adc.o(.text.ADC0_IRQHandler) refers to adc.o(.bss.gCheckADC) for gCheckADC
+    adc.o(.ARM.exidx.text.ADC0_IRQHandler) refers to adc.o(.text.ADC0_IRQHandler) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to uart.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to uart.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to uart.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to uart.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to uart.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to uart.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to uart.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to uart.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to uart.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to uart.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to uart.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to uart.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to uart.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to uart.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to uart.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to uart.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to uart.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to uart.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to uart.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to uart.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to uart.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to uart.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to uart.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to uart.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to uart.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to uart.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to uart.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to uart.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to uart.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to uart.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to uart.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to uart.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf6.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to uart.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to uart.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to uart.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to uart.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to uart.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to uart.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to uart.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to uart.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to uart.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to uart.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to uart.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to uart.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_mspm0g350x_uvision.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_mspm0g350x_uvision.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text.main) for main
+    idiv_div0.o(.text) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(i.__ARM_clz) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing dl_adc12.o(.text), (0 bytes).
+    Removing dl_adc12.o(.ARM.exidx.text.DL_ADC12_setClockConfig), (8 bytes).
+    Removing dl_adc12.o(.text.DL_ADC12_getClockConfig), (40 bytes).
+    Removing dl_adc12.o(.ARM.exidx.text.DL_ADC12_getClockConfig), (8 bytes).
+    Removing dl_aes.o(.text), (0 bytes).
+    Removing dl_aes.o(.text.DL_AES_setKey), (72 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_setKey), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_setKeyAligned), (56 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_setKeyAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadDataIn), (40 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadDataIn), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadDataInAligned), (24 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadDataInAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_getDataOut), (36 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_getDataOut), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_getDataOutAligned), (24 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_getDataOutAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadXORDataIn), (40 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataIn), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadXORDataInAligned), (24 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadXORDataInWithoutTrigger), (40 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInWithoutTrigger), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_loadXORDataInWithoutTriggerAligned), (24 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_loadXORDataInWithoutTriggerAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_xorData), (52 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_xorData), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_xorDataAligned), (36 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_xorDataAligned), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_saveConfiguration), (60 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_saveConfiguration), (8 bytes).
+    Removing dl_aes.o(.text.DL_AES_restoreConfiguration), (60 bytes).
+    Removing dl_aes.o(.ARM.exidx.text.DL_AES_restoreConfiguration), (8 bytes).
+    Removing dl_aesadv.o(.text), (0 bytes).
+    Removing dl_common.o(.text), (0 bytes).
+    Removing dl_common.o(.ARM.exidx.text.DL_Common_delayCycles), (8 bytes).
+    Removing dl_crc.o(.text), (0 bytes).
+    Removing dl_crc.o(.text.DL_CRC_calculateBlock32), (96 bytes).
+    Removing dl_crc.o(.ARM.exidx.text.DL_CRC_calculateBlock32), (8 bytes).
+    Removing dl_crc.o(.text.DL_CRC_calculateMemoryRange32), (52 bytes).
+    Removing dl_crc.o(.ARM.exidx.text.DL_CRC_calculateMemoryRange32), (8 bytes).
+    Removing dl_crc.o(.text.DL_CRC_calculateBlock16), (156 bytes).
+    Removing dl_crc.o(.ARM.exidx.text.DL_CRC_calculateBlock16), (8 bytes).
+    Removing dl_crc.o(.text.DL_CRC_calculateMemoryRange16), (104 bytes).
+    Removing dl_crc.o(.ARM.exidx.text.DL_CRC_calculateMemoryRange16), (8 bytes).
+    Removing dl_crcp.o(.text), (0 bytes).
+    Removing dl_dac12.o(.text), (0 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_init), (136 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_init), (8 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_outputBlocking8), (48 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_outputBlocking8), (8 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_outputBlocking12), (56 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_outputBlocking12), (8 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_fillFIFO8), (132 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_fillFIFO8), (8 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_fillFIFO12), (56 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_fillFIFO12), (8 bytes).
+    Removing dl_dac12.o(.text.DL_DAC12_performSelfCalibrationBlocking), (36 bytes).
+    Removing dl_dac12.o(.ARM.exidx.text.DL_DAC12_performSelfCalibrationBlocking), (8 bytes).
+    Removing dl_dma.o(.text), (0 bytes).
+    Removing dl_dma.o(.text.DL_DMA_initChannel), (68 bytes).
+    Removing dl_dma.o(.ARM.exidx.text.DL_DMA_initChannel), (8 bytes).
+    Removing dl_flashctl.o(.text), (0 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_eraseMemory), (22 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_eraseMemoryFromRAM), (24 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseMemoryFromRAM), (8 bytes).
+    Removing dl_flashctl.o(.ramfunc), (52 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.ramfunc), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_massErase), (248 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massErase), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_unprotectMainMemory), (20 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectMainMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_protectNonMainMemory), (16 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectNonMainMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_eraseDataBank), (152 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseDataBank), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_massEraseFromRAM), (328 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massEraseFromRAM), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_eraseDataBankFromRAM), (116 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_eraseDataBankFromRAM), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_massEraseMultiBank), (400 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_massEraseMultiBank), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_factoryReset), (92 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryReset), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_unprotectNonMainMemory), (12 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectNonMainMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_factoryResetFromRAM), (52 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryResetFromRAM), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_factoryResetMultiBank), (92 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_factoryResetMultiBank), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory8), (24 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory16), (26 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory32), (26 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory64), (30 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64), (36 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory8WithECCGenerated), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory16WithECCGenerated), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory32WithECCGenerated), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory64WithECCGenerated), (36 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCGenerated), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory8WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory8WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM8WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM8WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory16WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory16WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM16WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM16WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory32WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory32WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM32WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM32WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemory64WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemory64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM64WithECCManual), (48 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCGenerated), (136 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_unprotectSector), (224 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectSector), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated), (100 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking64WithECCManual), (168 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual), (120 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlockingFromRAM64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryBlocking), (160 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryBlocking), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_programMemoryFromRAM), (120 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_programMemoryFromRAM), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_unprotectDataMemory), (20 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectDataMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_protectMainMemory), (20 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectMainMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_unprotectAllMemory), (24 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_unprotectAllMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_protectAllMemory), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectAllMemory), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_protectSector), (240 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_protectSector), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify8), (26 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify16), (26 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify32), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify64), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16), (28 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64), (36 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCGenerated), (32 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCGenerated), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM8WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM8WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM16WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM16WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM32WithECCManual), (44 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM32WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerifyFromRAM64WithECCManual), (48 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerifyFromRAM64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify8WithECCGenerated), (30 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify16WithECCGenerated), (30 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify32WithECCGenerated), (30 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify64WithECCGenerated), (36 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64WithECCGenerated), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify8WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify8WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify16WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify16WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify32WithECCManual), (40 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify32WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_readVerify64WithECCManual), (48 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_readVerify64WithECCManual), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_blankVerify), (20 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_blankVerify), (8 bytes).
+    Removing dl_flashctl.o(.text.DL_FlashCTL_blankVerifyFromRAM), (24 bytes).
+    Removing dl_flashctl.o(.ARM.exidx.text.DL_FlashCTL_blankVerifyFromRAM), (8 bytes).
+    Removing dl_i2c.o(.text), (0 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_setClockConfig), (38 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_setClockConfig), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_getClockConfig), (26 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_getClockConfig), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_fillControllerTXFIFO), (140 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_fillControllerTXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_flushControllerTXFIFO), (68 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_flushControllerTXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_flushControllerRXFIFO), (52 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_flushControllerRXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_fillTargetTXFIFO), (144 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_fillTargetTXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_flushTargetTXFIFO), (68 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_flushTargetTXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_flushTargetRXFIFO), (52 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_flushTargetRXFIFO), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_transmitTargetDataBlocking), (36 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_transmitTargetDataBlocking), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_transmitTargetDataCheck), (28 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_transmitTargetDataCheck), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_receiveTargetDataBlocking), (40 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_receiveTargetDataBlocking), (8 bytes).
+    Removing dl_i2c.o(.text.DL_I2C_receiveTargetDataCheck), (24 bytes).
+    Removing dl_i2c.o(.ARM.exidx.text.DL_I2C_receiveTargetDataCheck), (8 bytes).
+    Removing dl_keystorectl.o(.text), (0 bytes).
+    Removing dl_lcd.o(.text), (0 bytes).
+    Removing dl_lfss.o(.text), (0 bytes).
+    Removing dl_mathacl.o(.text), (0 bytes).
+    Removing dl_mathacl.o(.text.DL_MathACL_configOperation), (40 bytes).
+    Removing dl_mathacl.o(.ARM.exidx.text.DL_MathACL_configOperation), (8 bytes).
+    Removing dl_mcan.o(.text), (0 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_isReady), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_isReady), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_setClockConfig), (36 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_setClockConfig), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getClockConfig), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClockConfig), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_isInReset), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_isInReset), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_isFDOpEnable), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_isFDOpEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_isMemInitDone), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_isMemInitDone), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_setOpMode), (24 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_setOpMode), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getOpMode), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getOpMode), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_init), (216 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_init), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_config), (212 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_config), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccConfig), (184 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccConfig), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_setBitTime), (216 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_setBitTime), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_msgRAMConfig), (520 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_msgRAMConfig), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_setExtIDAndMask), (52 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_setExtIDAndMask), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_writeMsgRam), (264 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeMsgRam), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_TXBufAddReq), (52 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_TXBufAddReq), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getNewDataStatus), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getNewDataStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_clearNewDataStatus), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_clearNewDataStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_readMsgRam), (292 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_readMsgRam), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_readTxEventFIFO), (96 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_readTxEventFIFO), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_addStdMsgIDFilter), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_addStdMsgIDFilter), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_addExtMsgIDFilter), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_addExtMsgIDFilter), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_lpbkModeEnable), (88 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_lpbkModeEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getErrCounters), (40 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getErrCounters), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getProtocolStatus), (80 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getProtocolStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_enableIntr), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_enableIntr), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_selectIntrLine), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_selectIntrLine), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getIntrLineSelectStatus), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getIntrLineSelectStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_enableIntrLine), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_enableIntrLine), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getIntrStatus), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getIntrStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_clearIntrStatus), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_clearIntrStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getHighPriorityMsgStatus), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getHighPriorityMsgStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getRxFIFOStatus), (60 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRxFIFOStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_writeRxFIFOAck), (64 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeRxFIFOAck), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxFIFOQueStatus), (36 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxFIFOQueStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxBufReqPend), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufReqPend), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_txBufCancellationReq), (52 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_txBufCancellationReq), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxBufTransmissionStatus), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufTransmissionStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_txBufCancellationStatus), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_txBufCancellationStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_TXBufTransIntrEnable), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_TXBufTransIntrEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxBufCancellationIntrEnable), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxBufCancellationIntrEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxEventFIFOStatus), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxEventFIFOStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_addClockStopRequest), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_addClockStopRequest), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_writeTxEventFIFOAck), (44 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_writeTxEventFIFOAck), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccForceError), (220 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccForceError), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccGetErrorStatus), (128 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccGetErrorStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccClearErrorStatus), (112 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccClearErrorStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccWriteEOI), (36 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccWriteEOI), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccEnableIntr), (56 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccEnableIntr), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccGetIntrStatus), (36 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccGetIntrStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccClearIntrStatus), (36 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccClearIntrStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSCounterConfig), (24 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSCounterConfig), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSCounterEnable), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSCounterEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSEnableIntr), (28 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSEnableIntr), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSWriteEOI), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSWriteEOI), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSGetUnservicedIntrCount), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSGetUnservicedIntrCount), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getRevisionId), (68 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRevisionId), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getClockStopAck), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClockStopAck), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSSetRawStatus), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSSetRawStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSClearRawStatus), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSClearRawStatus), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getRxPinState), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getRxPinState), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_setTxPinState), (48 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_setTxPinState), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTxPinState), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTxPinState), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTSCounterVal), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTSCounterVal), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getClkStopAck), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getClkStopAck), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getBitTime), (76 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getBitTime), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_resetTSCounter), (20 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_resetTSCounter), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getTOCounterVal), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getTOCounterVal), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccAggrGetRevisionId), (32 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccAggrGetRevisionId), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_eccWrapGetRevisionId), (84 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_eccWrapGetRevisionId), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_extTSIsIntrEnable), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_extTSIsIntrEnable), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getEndianVal), (12 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getEndianVal), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_getExtIDANDMask), (16 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_getExtIDANDMask), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_saveConfiguration), (228 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_saveConfiguration), (8 bytes).
+    Removing dl_mcan.o(.text.DL_MCAN_restoreConfiguration), (276 bytes).
+    Removing dl_mcan.o(.ARM.exidx.text.DL_MCAN_restoreConfiguration), (8 bytes).
+    Removing dl_mcan.o(.rodata..L__const.DL_MCAN_getDataSize.dataSize), (64 bytes).
+    Removing dl_mcan.o(.rodata.cst32), (32 bytes).
+    Removing dl_opa.o(.text), (0 bytes).
+    Removing dl_opa.o(.text.DL_OPA_increaseGain), (52 bytes).
+    Removing dl_opa.o(.ARM.exidx.text.DL_OPA_increaseGain), (8 bytes).
+    Removing dl_opa.o(.text.DL_OPA_decreaseGain), (48 bytes).
+    Removing dl_opa.o(.ARM.exidx.text.DL_OPA_decreaseGain), (8 bytes).
+    Removing dl_rtc_common.o(.text), (0 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_initCalendar), (144 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_initCalendar), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_getCalendarTime), (124 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarTime), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_setCalendarAlarm1), (96 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_setCalendarAlarm1), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_getCalendarAlarm1), (84 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarAlarm1), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_enableCalendarAlarm1), (60 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_enableCalendarAlarm1), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_disableCalendarAlarm1), (68 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_disableCalendarAlarm1), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_setCalendarAlarm2), (96 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_setCalendarAlarm2), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_getCalendarAlarm2), (84 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_getCalendarAlarm2), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_enableCalendarAlarm2), (60 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_enableCalendarAlarm2), (8 bytes).
+    Removing dl_rtc_common.o(.text.DL_RTC_Common_disableCalendarAlarm2), (68 bytes).
+    Removing dl_rtc_common.o(.ARM.exidx.text.DL_RTC_Common_disableCalendarAlarm2), (8 bytes).
+    Removing dl_spi.o(.text), (0 bytes).
+    Removing dl_spi.o(.text.DL_SPI_init), (68 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_init), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_setClockConfig), (18 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_setClockConfig), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_getClockConfig), (16 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_getClockConfig), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataBlocking8), (40 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataBlocking16), (40 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataBlocking32), (36 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataBlocking32), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataBlocking8), (36 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataBlocking16), (36 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataBlocking32), (36 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataBlocking32), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataCheck8), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataCheck16), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_receiveDataCheck32), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_receiveDataCheck32), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataCheck8), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataCheck16), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_transmitDataCheck32), (28 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_transmitDataCheck32), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_drainRXFIFO8), (100 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_drainRXFIFO16), (104 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_drainRXFIFO32), (104 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_drainRXFIFO32), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_fillTXFIFO8), (100 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO8), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_fillTXFIFO16), (104 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO16), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_saveConfiguration), (80 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_saveConfiguration), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_restoreConfiguration), (112 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_restoreConfiguration), (8 bytes).
+    Removing dl_spi.o(.text.DL_SPI_fillTXFIFO32), (104 bytes).
+    Removing dl_spi.o(.ARM.exidx.text.DL_SPI_fillTXFIFO32), (8 bytes).
+    Removing dl_timer.o(.text), (0 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setClockConfig), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setClockConfig), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getClockConfig), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getClockConfig), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initTimerMode), (232 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initTimerMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareValue), (16 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareValue), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareCtl), (40 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareCtl), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initCaptureMode), (268 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareInput), (26 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareInput), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initCaptureTriggerMode), (112 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureTriggerMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initCaptureCombinedMode), (228 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initCaptureCombinedMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initCompareMode), (172 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initCompareMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initCompareTriggerMode), (96 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initCompareTriggerMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_initPWMMode), (200 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_initPWMMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareAction), (36 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareAction), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareOutCtl), (24 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareOutCtl), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareValue), (16 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareValue), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareCtl), (24 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareCtl), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setSecondCompSrcDn), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompSrcDn), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getSecondCompSrcDn), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompSrcDn), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setSecondCompSrcUp), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompSrcUp), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getSecondCompSrcUp), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompSrcUp), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setSecondCompActionDn), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompActionDn), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getSecondCompActionDn), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompActionDn), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setSecondCompActionUp), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setSecondCompActionUp), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getSecondCompActionUp), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getSecondCompActionUp), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_enableSuppressionOfCompEvent), (24 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_enableSuppressionOfCompEvent), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_disableSuppressionOfCompEvent), (24 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_disableSuppressionOfCompEvent), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptCompUpdateMethod), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptCompUpdateMethod), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptCompUpdateMethod), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptCompUpdateMethod), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareOutCtl), (16 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareOutCtl), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareAction), (24 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareAction), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_overrideCCPOut), (32 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_overrideCCPOut), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareInput), (16 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareInput), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setCaptureCompareInputFilter), (28 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setCaptureCompareInputFilter), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getCaptureCompareInputFilter), (18 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getCaptureCompareInputFilter), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_enableCaptureCompareInputFilter), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_enableCaptureCompareInputFilter), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_disableCaptureCompareInputFilter), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_disableCaptureCompareInputFilter), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_isCaptureCompareInputFilterEnabled), (20 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_isCaptureCompareInputFilterEnabled), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_saveConfiguration), (192 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_saveConfiguration), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_restoreConfiguration), (196 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_restoreConfiguration), (8 bytes).
+    Removing dl_timer.o(.text.DL_TimerA_initPWMMode), (120 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_TimerA_initPWMMode), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_setFaultSourceConfig), (44 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_setFaultSourceConfig), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_getFaultSourceConfig), (32 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_getFaultSourceConfig), (8 bytes).
+    Removing dl_timer.o(.text.DL_TimerA_saveConfiguration), (264 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_TimerA_saveConfiguration), (8 bytes).
+    Removing dl_timer.o(.text.DL_TimerA_restoreConfiguration), (276 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_TimerA_restoreConfiguration), (8 bytes).
+    Removing dl_timer.o(.text.DL_Timer_configQEIHallInputMode), (36 bytes).
+    Removing dl_timer.o(.ARM.exidx.text.DL_Timer_configQEIHallInputMode), (8 bytes).
+    Removing dl_timer.o(.rodata..Lswitch.table.DL_Timer_initCompareMode), (12 bytes).
+    Removing dl_trng.o(.text), (0 bytes).
+    Removing dl_trng.o(.text.DL_TRNG_saveConfiguration), (44 bytes).
+    Removing dl_trng.o(.ARM.exidx.text.DL_TRNG_saveConfiguration), (8 bytes).
+    Removing dl_trng.o(.text.DL_TRNG_restoreConfiguration), (72 bytes).
+    Removing dl_trng.o(.ARM.exidx.text.DL_TRNG_restoreConfiguration), (8 bytes).
+    Removing dl_uart.o(.text), (0 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_init), (8 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_setClockConfig), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_getClockConfig), (16 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_getClockConfig), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_configBaudRate), (140 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_configBaudRate), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_configIrDAMode), (68 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_configIrDAMode), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_setIrDAPulseLength), (48 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_setIrDAPulseLength), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_receiveDataBlocking), (40 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_receiveDataBlocking), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_transmitDataBlocking), (36 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_transmitDataBlocking), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_receiveDataCheck), (28 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_receiveDataCheck), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_transmitDataCheck), (28 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_transmitDataCheck), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_drainRXFIFO), (100 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_drainRXFIFO), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_fillTXFIFO), (100 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_fillTXFIFO), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_Main_saveConfiguration), (88 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_Main_saveConfiguration), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_Main_restoreConfiguration), (120 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_Main_restoreConfiguration), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_Extend_saveConfiguration), (104 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_Extend_saveConfiguration), (8 bytes).
+    Removing dl_uart.o(.text.DL_UART_Extend_restoreConfiguration), (132 bytes).
+    Removing dl_uart.o(.ARM.exidx.text.DL_UART_Extend_restoreConfiguration), (8 bytes).
+    Removing dl_vref.o(.text), (0 bytes).
+    Removing dl_vref.o(.text.DL_VREF_configReference), (32 bytes).
+    Removing dl_vref.o(.ARM.exidx.text.DL_VREF_configReference), (8 bytes).
+    Removing dl_vref.o(.text.DL_VREF_setClockConfig), (18 bytes).
+    Removing dl_vref.o(.ARM.exidx.text.DL_VREF_setClockConfig), (8 bytes).
+    Removing dl_vref.o(.text.DL_VREF_getClockConfig), (16 bytes).
+    Removing dl_vref.o(.ARM.exidx.text.DL_VREF_getClockConfig), (8 bytes).
+    Removing dl_interrupt.o(.text), (0 bytes).
+    Removing dl_interrupt.o(.text.DL_Interrupt_registerInterrupt), (144 bytes).
+    Removing dl_interrupt.o(.ARM.exidx.text.DL_Interrupt_registerInterrupt), (8 bytes).
+    Removing dl_interrupt.o(.text.DL_Interrupt_unregisterInterrupt), (20 bytes).
+    Removing dl_interrupt.o(.ARM.exidx.text.DL_Interrupt_unregisterInterrupt), (8 bytes).
+    Removing dl_interrupt.o(.vtable), (192 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text), (0 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_configSYSPLL), (240 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_configSYSPLL), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setLFCLKSourceLFXT), (100 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setLFCLKSourceLFXT), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromSYSOSCtoLFCLK), (80 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromSYSOSCtoLFCLK), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromLFCLKtoSYSOSC), (60 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromLFCLKtoSYSOSC), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromSYSOSCtoHSCLK), (80 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromSYSOSCtoHSCLK), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_switchMCLKfromHSCLKtoSYSOSC), (48 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_switchMCLKfromHSCLKtoSYSOSC), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setHFCLKSourceHFXT), (96 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setHFCLKSourceHFXT), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_setHFCLKSourceHFXTParams), (108 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_setHFCLKSourceHFXTParams), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_configFCC), (28 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_configFCC), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicyRUNSLEEP), (48 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicyRUNSLEEP), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicySTOP), (52 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicySTOP), (8 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.text.DL_SYSCTL_getPowerPolicySTANDBY), (40 bytes).
+    Removing dl_sysctl_mspm0g1x0x_g3x0x.o(.ARM.exidx.text.DL_SYSCTL_getPowerPolicySTANDBY), (8 bytes).
+    Removing startup_mspm0g350x_uvision.o(HEAP), (0 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing ti_msp_dl_config.o(.text), (0 bytes).
+    Removing ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_init), (8 bytes).
+    Removing ti_msp_dl_config.o(.text.SYSCFG_DL_initPower), (64 bytes).
+    Removing ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_initPower), (8 bytes).
+    Removing ti_msp_dl_config.o(.text.SYSCFG_DL_SYSCTL_init), (60 bytes).
+    Removing ti_msp_dl_config.o(.ARM.exidx.text.SYSCFG_DL_SYSCTL_init), (8 bytes).
+    Removing led.o(.text), (0 bytes).
+    Removing led.o(.text.LED_Init), (28 bytes).
+    Removing led.o(.ARM.exidx.text.LED_Init), (8 bytes).
+    Removing systick.o(.text), (0 bytes).
+    Removing systick.o(.ARM.exidx.text.SysTick_Init), (8 bytes).
+    Removing systick.o(.ARM.exidx.text.delay_ms), (8 bytes).
+    Removing systick.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing uart.o(.text), (0 bytes).
+    Removing uart.o(.ARM.exidx.text.UART_0_init), (8 bytes).
+    Removing uart.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing uart.o(.bss.uart_data), (1 bytes).
+    Removing adc.o(.text), (0 bytes).
+    Removing adc.o(.ARM.exidx.text.ADC_Init), (8 bytes).
+    Removing adc.o(.ARM.exidx.text.ADC_getValue), (8 bytes).
+    Removing adc.o(.ARM.exidx.text.ADC0_IRQHandler), (8 bytes).
+    Removing dadd.o(.text), (356 bytes).
+    Removing dfixul.o(.text), (64 bytes).
+    Removing cdrcmple.o(.text), (40 bytes).
+
+666 unused section(s) (total 23327 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixi.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ..\Source\ti\devices\msp\m0p\startup_system_files\keil\startup_mspm0g350x_uvision.s 0x00000000   Number         0  startup_mspm0g350x_uvision.o ABSOLUTE
+    ADC.c                                    0x00000000   Number         0  adc.o ABSOLUTE
+    LED.c                                    0x00000000   Number         0  led.o ABSOLUTE
+    SysTick.c                                0x00000000   Number         0  systick.o ABSOLUTE
+    Uart.c                                   0x00000000   Number         0  uart.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    dl_adc12.c                               0x00000000   Number         0  dl_adc12.o ABSOLUTE
+    dl_aes.c                                 0x00000000   Number         0  dl_aes.o ABSOLUTE
+    dl_aesadv.c                              0x00000000   Number         0  dl_aesadv.o ABSOLUTE
+    dl_common.c                              0x00000000   Number         0  dl_common.o ABSOLUTE
+    dl_crc.c                                 0x00000000   Number         0  dl_crc.o ABSOLUTE
+    dl_crcp.c                                0x00000000   Number         0  dl_crcp.o ABSOLUTE
+    dl_dac12.c                               0x00000000   Number         0  dl_dac12.o ABSOLUTE
+    dl_dma.c                                 0x00000000   Number         0  dl_dma.o ABSOLUTE
+    dl_flashctl.c                            0x00000000   Number         0  dl_flashctl.o ABSOLUTE
+    dl_i2c.c                                 0x00000000   Number         0  dl_i2c.o ABSOLUTE
+    dl_interrupt.c                           0x00000000   Number         0  dl_interrupt.o ABSOLUTE
+    dl_keystorectl.c                         0x00000000   Number         0  dl_keystorectl.o ABSOLUTE
+    dl_lcd.c                                 0x00000000   Number         0  dl_lcd.o ABSOLUTE
+    dl_lfss.c                                0x00000000   Number         0  dl_lfss.o ABSOLUTE
+    dl_mathacl.c                             0x00000000   Number         0  dl_mathacl.o ABSOLUTE
+    dl_mcan.c                                0x00000000   Number         0  dl_mcan.o ABSOLUTE
+    dl_opa.c                                 0x00000000   Number         0  dl_opa.o ABSOLUTE
+    dl_rtc_common.c                          0x00000000   Number         0  dl_rtc_common.o ABSOLUTE
+    dl_spi.c                                 0x00000000   Number         0  dl_spi.o ABSOLUTE
+    dl_sysctl_mspm0g1x0x_g3x0x.c             0x00000000   Number         0  dl_sysctl_mspm0g1x0x_g3x0x.o ABSOLUTE
+    dl_timer.c                               0x00000000   Number         0  dl_timer.o ABSOLUTE
+    dl_trng.c                                0x00000000   Number         0  dl_trng.o ABSOLUTE
+    dl_uart.c                                0x00000000   Number         0  dl_uart.o ABSOLUTE
+    dl_vref.c                                0x00000000   Number         0  dl_vref.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    ti_msp_dl_config.c                       0x00000000   Number         0  ti_msp_dl_config.o ABSOLUTE
+    RESET                                    0x00000000   Section      192  startup_mspm0g350x_uvision.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x000000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x000000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000000d4   Section       20  startup_mspm0g350x_uvision.o(.text)
+    .text                                    0x000000e8   Section        0  dmul.o(.text)
+    .text                                    0x000001b8   Section        0  ddiv.o(.text)
+    .text                                    0x000002a8   Section        0  dflti.o(.text)
+    .text                                    0x000002d0   Section        0  dfixi.o(.text)
+    .text                                    0x00000318   Section        0  uidiv_div0.o(.text)
+    .text                                    0x00000356   Section        0  llushr.o(.text)
+    .text                                    0x00000378   Section        0  iusefp.o(.text)
+    .text                                    0x00000378   Section        0  depilogue.o(.text)
+    .text                                    0x00000438   Section       36  init.o(.text)
+    .text                                    0x0000045c   Section        0  llshl.o(.text)
+    [Anonymous Symbol]                       0x0000047c   Section        0  adc.o(.text.ADC0_IRQHandler)
+    __arm_cp.2_0                             0x00000490   Number         4  adc.o(.text.ADC0_IRQHandler)
+    [Anonymous Symbol]                       0x00000494   Section        0  adc.o(.text.ADC_Init)
+    __arm_cp.0_0                             0x000004d8   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_1                             0x000004dc   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_2                             0x000004e0   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_3                             0x000004e4   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_4                             0x000004e8   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_5                             0x000004ec   Number         4  adc.o(.text.ADC_Init)
+    __arm_cp.0_6                             0x000004f0   Number         4  adc.o(.text.ADC_Init)
+    [Anonymous Symbol]                       0x000004f4   Section        0  adc.o(.text.ADC_getValue)
+    __arm_cp.1_0                             0x00000530   Number         4  adc.o(.text.ADC_getValue)
+    __arm_cp.1_1                             0x00000534   Number         4  adc.o(.text.ADC_getValue)
+    __arm_cp.1_2                             0x00000538   Number         4  adc.o(.text.ADC_getValue)
+    [Anonymous Symbol]                       0x0000053c   Section        0  dl_adc12.o(.text.DL_ADC12_setClockConfig)
+    __arm_cp.0_0                             0x00000574   Number         4  dl_adc12.o(.text.DL_ADC12_setClockConfig)
+    __arm_cp.0_1                             0x00000578   Number         4  dl_adc12.o(.text.DL_ADC12_setClockConfig)
+    [Anonymous Symbol]                       0x0000057c   Section        0  dl_common.o(.text.DL_Common_delayCycles)
+    [Anonymous Symbol]                       0x00000588   Section        0  dl_uart.o(.text.DL_UART_init)
+    __arm_cp.0_0                             0x000005c8   Number         4  dl_uart.o(.text.DL_UART_init)
+    __arm_cp.0_1                             0x000005cc   Number         4  dl_uart.o(.text.DL_UART_init)
+    [Anonymous Symbol]                       0x000005d0   Section        0  dl_uart.o(.text.DL_UART_setClockConfig)
+    [Anonymous Symbol]                       0x000005e4   Section        0  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_0                             0x0000063c   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_1                             0x00000640   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_2                             0x00000644   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_3                             0x00000648   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_4                             0x0000064c   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_5                             0x00000650   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_6                             0x00000654   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    __arm_cp.0_7                             0x00000658   Number         4  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    [Anonymous Symbol]                       0x0000065c   Section        0  systick.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x00000674   Section        0  systick.o(.text.SysTick_Init)
+    __arm_cp.0_0                             0x00000698   Number         4  systick.o(.text.SysTick_Init)
+    __arm_cp.0_1                             0x0000069c   Number         4  systick.o(.text.SysTick_Init)
+    __arm_cp.0_2                             0x000006a0   Number         4  systick.o(.text.SysTick_Init)
+    [Anonymous Symbol]                       0x000006a4   Section        0  uart.o(.text.UART_0_init)
+    __arm_cp.0_0                             0x00000704   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_1                             0x00000708   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_2                             0x0000070c   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_3                             0x00000710   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_4                             0x00000714   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_5                             0x00000718   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_6                             0x0000071c   Number         4  uart.o(.text.UART_0_init)
+    __arm_cp.0_7                             0x00000720   Number         4  uart.o(.text.UART_0_init)
+    [Anonymous Symbol]                       0x00000724   Section        0  systick.o(.text.delay_ms)
+    __arm_cp.1_0                             0x00000744   Number         4  systick.o(.text.delay_ms)
+    [Anonymous Symbol]                       0x00000748   Section        0  uart.o(.text.fputc)
+    __arm_cp.1_0                             0x00000768   Number         4  uart.o(.text.fputc)
+    [Anonymous Symbol]                       0x0000076c   Section        0  main.o(.text.main)
+    __arm_cp.0_0                             0x00000800   Number         4  main.o(.text.main)
+    __arm_cp.0_1                             0x00000804   Number         4  main.o(.text.main)
+    __arm_cp.0_3                             0x00000818   Number         4  main.o(.text.main)
+    __arm_cp.0_4                             0x0000081c   Number         4  main.o(.text.main)
+    __arm_cp.0_5                             0x00000820   Number         4  main.o(.text.main)
+    __arm_cp.0_6                             0x00000824   Number         4  main.o(.text.main)
+    __arm_cp.0_7                             0x00000828   Number         4  main.o(.text.main)
+    __arm_cp.0_8                             0x0000082c   Number         4  main.o(.text.main)
+    i.__0printf$1                            0x0000084c   Section        0  printf1.o(i.__0printf$1)
+    i.__ARM_clz                              0x0000086c   Section        0  depilogue.o(i.__ARM_clz)
+    i.__scatterload_copy                     0x000008a0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000008b0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000008b8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _printf_core                             0x000008c9   Thumb Code   332  printf1.o(i._printf_core)
+    i._printf_core                           0x000008c8   Section        0  printf1.o(i._printf_core)
+    gADC_VOLTAGEClockConfig                  0x00000a18   Data           8  adc.o(.rodata.gADC_VOLTAGEClockConfig)
+    [Anonymous Symbol]                       0x00000a18   Section        0  adc.o(.rodata.gADC_VOLTAGEClockConfig)
+    gUART_0ClockConfig                       0x00000a20   Data           2  uart.o(.rodata.gUART_0ClockConfig)
+    [Anonymous Symbol]                       0x00000a20   Section        0  uart.o(.rodata.gUART_0ClockConfig)
+    gUART_0Config                            0x00000a22   Data          10  uart.o(.rodata.gUART_0Config)
+    [Anonymous Symbol]                       0x00000a22   Section        0  uart.o(.rodata.gUART_0Config)
+    .data                                    0x20200000   Section        4  stdout.o(.data)
+    STACK                                    0x20200010   Section      256  startup_mspm0g350x_uvision.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_mspm0g350x_uvision.o(RESET)
+    _printf_a                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_mspm0g350x_uvision.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_mspm0g350x_uvision.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000000d5   Thumb Code     4  startup_mspm0g350x_uvision.o(.text)
+    NMI_Handler                              0x000000d9   Thumb Code     2  startup_mspm0g350x_uvision.o(.text)
+    HardFault_Handler                        0x000000db   Thumb Code     2  startup_mspm0g350x_uvision.o(.text)
+    SVC_Handler                              0x000000dd   Thumb Code     2  startup_mspm0g350x_uvision.o(.text)
+    PendSV_Handler                           0x000000df   Thumb Code     2  startup_mspm0g350x_uvision.o(.text)
+    ADC1_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    AES_IRQHandler                           0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    CANFD0_IRQHandler                        0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    DAC0_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    DMA_IRQHandler                           0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    Default_Handler                          0x000000e3   Thumb Code     2  startup_mspm0g350x_uvision.o(.text)
+    GROUP0_IRQHandler                        0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    GROUP1_IRQHandler                        0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    I2C0_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    I2C1_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    RTC_IRQHandler                           0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    SPI0_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    SPI1_IRQHandler                          0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMA0_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMA1_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMG0_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMG12_IRQHandler                        0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMG6_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMG7_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    TIMG8_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    UART0_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    UART1_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    UART2_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    UART3_IRQHandler                         0x000000e3   Thumb Code     0  startup_mspm0g350x_uvision.o(.text)
+    __aeabi_dmul                             0x000000e9   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x000001b9   Thumb Code   234  ddiv.o(.text)
+    __aeabi_i2d                              0x000002a9   Thumb Code    34  dflti.o(.text)
+    __aeabi_d2iz                             0x000002d1   Thumb Code    62  dfixi.o(.text)
+    __aeabi_uidiv                            0x00000319   Thumb Code     0  uidiv_div0.o(.text)
+    __aeabi_uidivmod                         0x00000319   Thumb Code    62  uidiv_div0.o(.text)
+    __aeabi_llsr                             0x00000357   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x00000357   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x00000379   Thumb Code     0  iusefp.o(.text)
+    _double_round                            0x00000379   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x00000393   Thumb Code   164  depilogue.o(.text)
+    __scatterload                            0x00000439   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000439   Thumb Code     0  init.o(.text)
+    __aeabi_llsl                             0x0000045d   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x0000045d   Thumb Code     0  llshl.o(.text)
+    ADC0_IRQHandler                          0x0000047d   Thumb Code    20  adc.o(.text.ADC0_IRQHandler)
+    ADC_Init                                 0x00000495   Thumb Code    68  adc.o(.text.ADC_Init)
+    ADC_getValue                             0x000004f5   Thumb Code    60  adc.o(.text.ADC_getValue)
+    DL_ADC12_setClockConfig                  0x0000053d   Thumb Code    56  dl_adc12.o(.text.DL_ADC12_setClockConfig)
+    DL_Common_delayCycles                    0x0000057d   Thumb Code    10  dl_common.o(.text.DL_Common_delayCycles)
+    DL_UART_init                             0x00000589   Thumb Code    64  dl_uart.o(.text.DL_UART_init)
+    DL_UART_setClockConfig                   0x000005d1   Thumb Code    18  dl_uart.o(.text.DL_UART_setClockConfig)
+    SYSCFG_DL_init                           0x000005e5   Thumb Code    88  ti_msp_dl_config.o(.text.SYSCFG_DL_init)
+    SysTick_Handler                          0x0000065d   Thumb Code    24  systick.o(.text.SysTick_Handler)
+    SysTick_Init                             0x00000675   Thumb Code    36  systick.o(.text.SysTick_Init)
+    UART_0_init                              0x000006a5   Thumb Code    96  uart.o(.text.UART_0_init)
+    delay_ms                                 0x00000725   Thumb Code    32  systick.o(.text.delay_ms)
+    fputc                                    0x00000749   Thumb Code    32  uart.o(.text.fputc)
+    main                                     0x0000076d   Thumb Code   148  main.o(.text.main)
+    __0printf$1                              0x0000084d   Thumb Code    24  printf1.o(i.__0printf$1)
+    __1printf$1                              0x0000084d   Thumb Code     0  printf1.o(i.__0printf$1)
+    __2printf                                0x0000084d   Thumb Code     0  printf1.o(i.__0printf$1)
+    __ARM_clz                                0x0000086d   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __scatterload_copy                       0x000008a1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000008b1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000008b9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00000a2c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000a4c   Number         0  anon$$obj.o(Region$$Table)
+    __stdout                                 0x20200000   Data           4  stdout.o(.data)
+    delay_times                              0x20200008   Data           4  systick.o(.bss.delay_times)
+    gCheckADC                                0x2020000c   Data           1  adc.o(.bss.gCheckADC)
+    __initial_sp                             0x20200110   Data           0  startup_mspm0g350x_uvision.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000a58, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000a4c, Max: 0x00020000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO          776    RESET               startup_mspm0g350x_uvision.o
+    0x000000c0   0x000000c0   0x00000000   Code   RO          861  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x000000c0   0x00000004   Code   RO         1139    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x000000c4   0x00000004   Code   RO         1142    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         1144    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         1146    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x000000c8   0x00000008   Code   RO         1147    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x000000d0   0x00000000   Code   RO         1149    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x000000d0   0x00000000   Code   RO         1151    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x000000d0   0x00000004   Code   RO         1140    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x000000d4   0x00000014   Code   RO          777    .text               startup_mspm0g350x_uvision.o
+    0x000000e8   0x000000e8   0x000000d0   Code   RO         1131    .text               mf_p.l(dmul.o)
+    0x000001b8   0x000001b8   0x000000f0   Code   RO         1133    .text               mf_p.l(ddiv.o)
+    0x000002a8   0x000002a8   0x00000028   Code   RO         1135    .text               mf_p.l(dflti.o)
+    0x000002d0   0x000002d0   0x00000048   Code   RO         1137    .text               mf_p.l(dfixi.o)
+    0x00000318   0x00000318   0x0000003e   Code   RO         1158    .text               mc_p.l(uidiv_div0.o)
+    0x00000356   0x00000356   0x00000022   Code   RO         1166    .text               mc_p.l(llushr.o)
+    0x00000378   0x00000378   0x00000000   Code   RO         1168    .text               mc_p.l(iusefp.o)
+    0x00000378   0x00000378   0x000000be   Code   RO         1169    .text               mf_p.l(depilogue.o)
+    0x00000436   0x00000436   0x00000002   PAD
+    0x00000438   0x00000438   0x00000024   Code   RO         1179    .text               mc_p.l(init.o)
+    0x0000045c   0x0000045c   0x00000020   Code   RO         1181    .text               mc_p.l(llshl.o)
+    0x0000047c   0x0000047c   0x00000018   Code   RO          850    .text.ADC0_IRQHandler  adc.o
+    0x00000494   0x00000494   0x00000060   Code   RO          846    .text.ADC_Init      adc.o
+    0x000004f4   0x000004f4   0x00000048   Code   RO          848    .text.ADC_getValue  adc.o
+    0x0000053c   0x0000053c   0x00000040   Code   RO            2    .text.DL_ADC12_setClockConfig  dl_adc12.o
+    0x0000057c   0x0000057c   0x0000000a   Code   RO           51    .text.DL_Common_delayCycles  dl_common.o
+    0x00000586   0x00000586   0x00000002   PAD
+    0x00000588   0x00000588   0x00000048   Code   RO          676    .text.DL_UART_init  dl_uart.o
+    0x000005d0   0x000005d0   0x00000012   Code   RO          678    .text.DL_UART_setClockConfig  dl_uart.o
+    0x000005e2   0x000005e2   0x00000002   PAD
+    0x000005e4   0x000005e4   0x00000078   Code   RO          794    .text.SYSCFG_DL_init  ti_msp_dl_config.o
+    0x0000065c   0x0000065c   0x00000018   Code   RO          820    .text.SysTick_Handler  systick.o
+    0x00000674   0x00000674   0x00000030   Code   RO          816    .text.SysTick_Init  systick.o
+    0x000006a4   0x000006a4   0x00000080   Code   RO          831    .text.UART_0_init   uart.o
+    0x00000724   0x00000724   0x00000024   Code   RO          818    .text.delay_ms      systick.o
+    0x00000748   0x00000748   0x00000024   Code   RO          833    .text.fputc         uart.o
+    0x0000076c   0x0000076c   0x000000e0   Code   RO          784    .text.main          main.o
+    0x0000084c   0x0000084c   0x00000020   Code   RO          915    i.__0printf$1       mc_p.l(printf1.o)
+    0x0000086c   0x0000086c   0x0000002e   Code   RO         1171    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x0000089a   0x0000089a   0x00000006   PAD
+    0x000008a0   0x000008a0   0x0000000e   Code   RO         1187    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x000008ae   0x000008ae   0x00000002   PAD
+    0x000008b0   0x000008b0   0x00000002   Code   RO         1188    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000008b2   0x000008b2   0x00000006   PAD
+    0x000008b8   0x000008b8   0x0000000e   Code   RO         1189    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x000008c6   0x000008c6   0x00000002   PAD
+    0x000008c8   0x000008c8   0x00000150   Code   RO          922    i._printf_core      mc_p.l(printf1.o)
+    0x00000a18   0x00000a18   0x00000008   Data   RO          852    .rodata.gADC_VOLTAGEClockConfig  adc.o
+    0x00000a20   0x00000a20   0x00000002   Data   RO          836    .rodata.gUART_0ClockConfig  uart.o
+    0x00000a22   0x00000a22   0x0000000a   Data   RO          837    .rodata.gUART_0Config  uart.o
+    0x00000a2c   0x00000a2c   0x00000020   Data   RO         1186    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM2 (Exec base: 0x20200000, Load base: 0x00000a50, Size: 0x00000110, Max: 0x00008000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20200000   0x00000a50   0x00000004   Data   RW         1153    .data               mc_p.l(stdout.o)
+    0x20200004   0x00000a54   0x00000004   PAD
+    0x20200008        -       0x00000004   Zero   RW          822    .bss.delay_times    systick.o
+    0x2020000c        -       0x00000001   Zero   RW          853    .bss.gCheckADC      adc.o
+    0x2020000d   0x00000a54   0x00000003   PAD
+    0x20200010        -       0x00000100   Zero   RW          774    STACK               startup_mspm0g350x_uvision.o
+
+
+
+  Load Region LR_BCR (Base: 0x41c00000, Size: 0x00000000, Max: 0x00000100, ABSOLUTE)
+
+    Execution Region BCR_CONFIG (Exec base: 0x41c00000, Load base: 0x41c00000, Size: 0x00000000, Max: 0x00000080, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+
+  Load Region LR_BSL (Base: 0x41c00100, Size: 0x00000000, Max: 0x00000100, ABSOLUTE)
+
+    Execution Region BSL_CONFIG (Exec base: 0x41c00100, Load base: 0x41c00100, Size: 0x00000000, Max: 0x00000080, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       192         44          8          0          1       7232   adc.o
+        64          8          0          0          0       4528   dl_adc12.o
+        10          0          0          0          0        617   dl_common.o
+        90          8          0          0          0      14294   dl_uart.o
+       224         76          0          0          0       2457   main.o
+        20          4        192          0        256        728   startup_mspm0g350x_uvision.o
+       108         16          0          0          4       2910   systick.o
+       120         32          0          0          0      15627   ti_msp_dl_config.o
+       164         36         12          0          0       8112   uart.o
+
+    ----------------------------------------------------------------------
+       996        224        244          0        264      56505   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         4          0          0          0          3          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        34          0          0          0          0         68   llushr.o
+       368         12          0          0          0        168   printf1.o
+         0          0          0          4          0          0   stdout.o
+        62          0          0          0          0         72   uidiv_div0.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        72         10          0          0          0         72   dfixi.o
+        40          6          0          0          0         68   dflti.o
+       208          6          0          0          0         88   dmul.o
+
+    ----------------------------------------------------------------------
+      1396         56          0          4          4        972   Library Totals
+        18          0          0          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       582         28          0          4          0        444   mc_p.l
+       796         28          0          0          0        528   mf_p.l
+
+    ----------------------------------------------------------------------
+      1396         56          0          4          4        972   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2392        280        244          4        268      57049   Grand Totals
+      2392        280        244          4        268      57049   ELF Image Totals
+      2392        280        244          4          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2636 (   2.57kB)
+    Total RW  Size (RW Data + ZI Data)               272 (   0.27kB)
+    Total ROM Size (Code + RO Data + RW Data)       2640 (   2.58kB)
+
+==============================================================================
+
